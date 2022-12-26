@@ -1,0 +1,279 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hydrate..net</title>
+    <link rel="stylesheet" href="./styles..css">
+    <link rel="script" href="script.js">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- <div class="nav-left"> -->
+            <!-- <img src="https://hydrate.net/static/media/hydrate_b_215x90.539cc761f5cab622a1cac702c8c81d00.svg"> -->
+            <div class="hydrate-txt"><img class="hydrate" src="images/HY_215x90@3x.png" alt="Hydrate"></div>
+            <!-- </div> -->
+            <div class="nav-right">
+                <ul>
+                    <li><a href="index..html">Home</a></li>
+                    <li><a href="#">Distributor</a></li>
+                    <li><a href="#">Get Started</a></li>
+                </ul>
+                <a href="#">
+                    <div class="request-btn">Request Demo</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="landingpage">
+        <div class="box"></div>
+        <div class="hero-content">
+            <div class="control-txt">Have Control Over Your Water Flow</div>
+            <div class="easy-txt">Easily Take Water Consumption</div>
+            <div class="get-started-btn" id="get-started-btn">Get Started</div>
+        </div>
+        <div class="semi-circle"></div>
+        <div class="top-images">
+            <div class="image1">
+                <img src="images\2202758.png">
+            </div>
+            <div class="image2">
+                <img src="images/2202758.png" alt="">
+            </div>
+        </div>
+        <div class="flex-area">
+            <div class="flexitem1">
+                <div class="item1-image">
+                    <img src="images\20943659.png">
+                </div>
+                <div class="item1-content">
+                    <div class="item1 header">
+                        Get Better Solutions
+                    </div>
+                    <div class="item1 text">
+                        Shop with assurance, get any water solution Knowing that your satisfaction is guaranteed
+                    </div>
+                </div>
+            </div>
+            <div class="flexitem2">
+                <div class="item2-image">
+                    <img src="images\5363957.png" alt="">
+                </div>
+                <div class="item2-content">
+                    <div class="item2 header">
+                        Become a partner
+                    </div>
+                    <div class="item2 text">
+                        Join Hydrate and you'll have the chance to give safe water to people in your community and
+                        throughout the country
+                    </div>
+                </div>
+            </div>
+
+            <div class="flexitem3">
+                <div class="item3-image">
+                    <img src="images\4753177.png" alt="">
+                </div>
+                <div class="item3-content">
+                    <div class="item3 header">
+                        Try the App
+                    </div>
+                    <div class="item3 text">
+                        Get access to clean and safe water by downloading the app. Order and follow up on our solutions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secondpage">
+        <header>FEATURES OF HYDRATE PLATFORM</header>
+        <div class="grid-area">
+            <div class="grid-item1">
+                <div class="grid1 header">1. Water Vending</div>
+                <div class="grid-text">
+                    Shop with assurance, get any water solution knowing that your satisfaction is guaranteed
+                </div>
+            </div>
+            <div class="grid-item2">
+                <div class="grid2 header">2. Water Quality</div>
+                <div class="grid-text">
+                    Shop with assurance, get any water solution knowing that your satisfaction is guaranteed
+                </div>
+            </div>
+            <div class="grid-item3">
+                <div class="grid3 header">3. Water Level Sensor</div>
+                <div class="grid-text">Shop with assurance, get any water solution knowing that your satisfaction is
+                    guaranteed</div>
+            </div>
+            <div class="grid-item4">
+                <div class="grid4 header">4. Water Temperature</div>
+                <div class="grid-text">Shop with assurance, get any water solution knowing that your satisfaction is
+                    guaranteed</div>
+            </div>
+            <div class="grid-item5">
+                <div class="grid5 header">5. Payment System</div>
+                <div class="grid-text">Shop with assurance, get any water solution knowing that your satisfaction is
+                    guaranteed</div>
+            </div>
+            <div class="grid-item6">
+                <div class="grid6 header">6. Data Management</div>
+                <div class="grid-text">Shop with assurance, get any water solution knowing that your satisfaction is
+                    guaranteed</div>
+            </div>
+            <div class="grid-item7">
+                <div class="grid7 header">7. Location Based System</div>
+                <div class="grid-text">Shop with assurance, get any water solution knowing that your satisfaction is
+                    guaranteed</div>
+            </div>
+        </div>
+        <img src="images\3487927.png" alt="">
+    </section>
+    <section class="our-subscription-page" x-data="{ currentPlan: 'INDIVIDUAL' }">
+        <div class="texts-in-subscription-page">
+            <h1 class="our-subscription-plan">Our Subscription Plans</h1>
+            <h1 class="our-subscription-plan2">Choose Your Plan</h1>
+            <h3 class="choose-your-plan">Choose the right plan for your business</h3>
+            <h3 class="choose-your-right"></h3>
+            <button class="buttons" @click="currentPlan = 'INDIVIDUAL">INDIVIDUAL</button>
+            <button class="buttons" @click="currentPlan = 'CORPERATE">CORPERATE</button>
+        </div>
+        <div class="second-flex-container" x-show="currentPlan != 'INDIVIDUAL">
+            <div class="startup">
+                <h1>STARTUP</h1>
+                <p class="inside-paragraph" style="font-size: 40px;">0$ <span style="font-size: 20px;">/Month</span></p>
+                <br>
+                <p class="inside-paragraph">Our free plan to get <br> started</p><br>
+                <ul style="list-style-type: square; text-align: left; margin-left: 30px;">
+                    <li>
+                        <h3>1 Number of devices To add</h3>
+                    </li>
+                    <li>
+                        <h3>General support</h3>
+                    </li>
+                </ul>
+                <button class="choose-button">CHOOSE</button>
+            </div>
+            <div class="advanced">
+                <h1>ADVANCED</h1>
+                <p class="inside-paragraph" style="font-size: 40px;">45$ <span style="font-size: 20px;">/Month</span>
+                </p>
+                <br>
+                <p class="inside-paragraph">Our free plan to get <br> started</p><br>
+                <ul style="list-style-type: square; text-align: left; margin-left: 30px;">
+                    <li>
+                        <h3>3 Number of devices To add</h3>
+                    </li>
+                    <li>
+                        <h3>SMS, Email, Push notification</h3>
+                    </li>
+                    <li>
+                        <h3>Device Report</h3>
+                    </li>
+                    <li>
+                        <h3>Manage orders</h3>
+                    </li>
+                    <li>
+                        <h3>10 products can Be added</h3>
+                    </li>
+                    <li>
+                        <h3>Technical Support</h3>
+                    </li>
+                    <li>
+                        <h3>General support</h3>
+                    </li>
+                </ul>
+                <button class="choose-button2" class="tooltip" class="tooltiptext">CHOOSE</button>
+            </div>
+            <div class="enterprise">
+                <h1>ENTERPRISE</h1>
+                <p class="inside-paragraph" style="font-size: 40px;">70$ <span style="font-size: 20px;">/Month</span>
+                </p>
+                <br>
+                <p class="inside-paragraph">Our free plan to get <br> started</p><br>
+                <ul style="list-style-type: square; text-align: left; margin-left: 30px;">
+                    <li>
+                        <h3>Unlimited Number of devices To add</h3>
+                    </li>
+                    <li>
+                        <h3>SMS, Email, Push notification</h3>
+                    </li>
+                    <li>
+                        <h3>Water Quality</h3>
+                    </li>
+                    <li>
+                        <h3>Water Level</h3>
+                    </li>
+                    <li>
+                        <h3>Water Leakage</h3>
+                    </li>
+                    <li>
+                        <h3>Water Report</h3>
+                    </li>
+                    <li>
+                        <h3>Sales Report</h3>
+                    </li>
+                    <li>
+                        <h3>Device Report</h3>
+                    </li>
+                    <li>
+                        <h3>Manage Orders</h3>
+                    </li>
+                    <li>
+                        <h3>Unlimited Orders</h3>
+                    </li>
+                    <li>
+                        <h3>Technical Support</h3>
+                    </li>
+                    <li>
+                        <h3>General support</h3>
+                    </li>
+                    <li>
+                        <h3>24/7 Support</h3>
+                    </li>
+                </ul>
+                <button class="choose-button3">CHOOSE</button>
+            </div>
+        </div>
+    </section>
+    <div class="combined-div">
+        <div class="borderradius">
+            <div class="image-with-span">
+                <span class="hydrateapp">
+                    <h1>Hydrate App</h1><br>
+                    <h3>Get the app now on</h3>
+                </span>
+                <img class="appstore" src="images/appstore.png" alt="app store">
+                <img class="googleplay" src="images/google.png" alt="Google play">
+
+            </div>
+            <img class="phoneimg" src="images/89354.png" alt="view of the mobile app">
+        </div>
+        <div class="last-div">
+            <section class="last-page">
+                <div class="textblock">
+                    <h3>Would you need a customer service?</h3><br>info@hydrate.net
+                </div><br>
+                <div class="textblock">
+                    <h3>Want to help make hydrate better?</h3><br>support@hydrate.net
+                </div>
+                <div class="textblock"></div>
+                <span class="Tblock">
+                    <h3>More from hydrate</h3><br>
+                </span>
+                <span class="Tblock">
+                    <h3>Stay connected</h3><br>
+                </span>
+                <footer class="copyright">
+                    <h2>2022 @ Hydrate</h2>
+                </footer>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
